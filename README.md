@@ -1,5 +1,5 @@
 # SDM Defence Password Gen
- Make/Decode passwords for the warcraft 3 custom made SDM Defence
+ Make/Decode passwords for the warcraft 3 custom game SDM Defence
 
 Run using `python pass.py` and enter the prompted info
 
