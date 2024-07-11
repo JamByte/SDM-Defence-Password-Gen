@@ -50,12 +50,16 @@ if(x == "1"):
             score = int(score)
             if(score>=100000):
                 print("Max score is 99999 please enter a lower value")
-        except Exception as e: print("Score must be a number")
+        except Exception as e: print("Score must be a number") 
+    score = str(score)
+    while len(score)<5:
+        score = "0"+score
+
     name = input("Warcraft 3 name: ")
     while len(name)<4:
         name+="0"#I think this is how it handles it
     name = name.upper()
-    scoreStr = str(score)
+    scoreStr = score
     checksum = sum([int(s) for s in scoreStr])#add all digits together
     checksum = str(checksum)[-2:] #only last, just in case
     password = name[0]+name[2] 
