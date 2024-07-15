@@ -68,6 +68,7 @@ if(x == "1"):
     password+= invDict3[scoreStr[2]]
     password+= invDict4[scoreStr[3]]
     password+= invDict5[scoreStr[4]]
+    if(len(checksum)<2):checksum="0"+checksum
     password+= invDict6[checksum[0]]
     password+= invDict7[checksum[1]]
     p=password
